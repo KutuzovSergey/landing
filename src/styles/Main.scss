@@ -1,0 +1,43 @@
+// @import '../fonts/Montserrat/static/Montserrat-Medium.ttf';
+// @import '../fonts/Montserrat/static/Montserrat-Bold.ttf';
+
+$background_first: rgba(41, 41, 41, 1);
+$background_second: rgba(60, 60, 60, 1);
+$background_third: rgba(30, 30, 30, 1);
+$corporate_color: rgba(0, 165, 80, 1);
+$second_corporate_color: rgba(0, 255, 124, 1);
+$color_first: rgba(255, 255, 255, 1);
+$color_second: rgba(189, 189, 189, 1);
+// $font_style: "Montserrat", system-ui;
+
+@mixin block {
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    background-color: $background_block;
+}
+
+@mixin text {
+    color: $color;
+    font-size: 1.7rem;
+    font-weight: 800;
+    letter-spacing: 0.2em;
+    // font-family: "Montserrat", system-ui;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+@mixin input($width, $height, $color, $fontSize, $padding, $border, $borderRadius){
+    width: $width;
+    height: $height;
+    color: $color;
+    font-size: $fontSize;
+    padding: $padding;
+    border: 1px solid $border;
+    border-radius: $borderRadius;
+    box-shadow: 0 1px 0 1px rgba(0,0,0,.04);
+    // font-family: 'Rubik Mono One', sans-serif;
+}
