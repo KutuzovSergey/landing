@@ -1,4 +1,4 @@
-import React from "react";
+import { FC } from "react";
 // import Button from '@mui/material/Button';
 
 import cl from './MyButton.module.scss';
@@ -9,7 +9,7 @@ type Props = {
     onClick?: (e?: React.MouseEvent<HTMLButtonElement>) => void
 }
 
-const MyButton:React.FC<Props> = ({children, ...props}: Props) => {
+const MyButton: FC<Props> = ({children, ...props}: Props) => {
     const buttonStyles: string[] = [cl.myButton];
 
     if (props.disabled) {

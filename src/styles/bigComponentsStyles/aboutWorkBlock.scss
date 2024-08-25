@@ -1,0 +1,7 @@
+@import '../Main.scss';
+
+.aboutWork{
+	@include blockContent(100%, auto, auto, flex, center, space-between);
+	flex-direction: column;
+	background: linear-gradient(93.53deg, #292929 49%, #3C3C3C 98.16%);
+}

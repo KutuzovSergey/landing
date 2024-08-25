@@ -1,0 +1,19 @@
+@import '../Main.scss';
+
+.selection{
+	@include blockContent(100%, 118px, 0, flex, center, space-between);
+
+		&__title{}
+	
+		&__title>span{
+			@include text($color_second, 1.25rem, 700, 24.51px, left);
+			text-transform: uppercase;
+		}
+
+		&__selection-field{}
+
+		&__button{
+			width: 154px;
+			height: 49px;
+		}
+}

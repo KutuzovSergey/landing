@@ -1,0 +1,9 @@
+@import '../Main.scss';
+
+.header{
+	@include blockContent(75%, 120px, auto, flex, center, space-between);
+
+	&__phone>span{
+		@include text($color_first, 1.75rem, 700, 38.13px, center);
+	}
+}

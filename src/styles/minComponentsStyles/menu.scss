@@ -1,0 +1,34 @@
+@import "../Main.scss";
+
+.menu {
+	display: flex;
+	width: 35%;
+	height: 100%;
+
+	&__block{
+		width: 100%;
+		height: 100%;
+		margin: 0;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__item {
+		width: 33.3%;
+		height: 100%;
+		margin: auto;
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+	}
+
+	&__link {
+		@include text($color_first, 1rem, 700, 21.79, center);
+		width: auto;
+		height: auto;
+		display: flex;
+		text-decoration: none;
+	}
+}

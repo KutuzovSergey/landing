@@ -1,8 +1,8 @@
-export type ourListType = {
-	ADD_POST: string,
-   DELETE_POST: string,
-   CHANGE_POST: string
-}
+export type JobCardsArrType = {
+	number: string,
+   image: any,
+   text: string,
+}[]
 
 export type StateListType = {
 	textPost: string[],

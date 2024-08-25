@@ -1,0 +1,31 @@
+@import '../Main.scss';
+
+.setting {
+	@include blockContent(24%, 45px, auto, flex, center, space-between);
+
+		&__image {
+			width: 45px;
+			height: 45px;
+		}
+
+		&__image>img {
+			width: 100%;
+			height: auto;
+		}
+
+		&__block {
+			width: 235px;
+			height: auto;
+		}
+
+		&__block > span{
+			@include text($color_second, 1rem, 700, 21.79px, left);
+			display: block;
+		}
+}
+
+.setting:hover .setting__block > span{
+	background: linear-gradient(91.26deg, $corporate_color 0.62%, $second_corporate_color 99.49%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}

@@ -1,0 +1,48 @@
+@import '../Main.scss';
+
+.banner {
+	@include blockContent(75%, 563px, auto, flex, center, space-between);
+
+		&__block-info {
+			@include blockContent(50%, auto, 0px, flex, center, space-between);
+			flex-direction: column;
+		}
+
+		&__title>h1{
+			@include text($color_first, 3.188rem, 700, 70.81px, left);
+			margin: 0;
+			padding: 0;
+		}
+
+		&__selected-text {
+			color: $corporate_color;
+			background: linear-gradient(91.26deg, $corporate_color 0.62%, $second_corporate_color 99.49%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+		}
+
+		&__text>span {
+			@include text($color_first, 1.5rem, 400, 32.68px, left);
+			margin: 0;
+			padding: 0;
+		}
+
+		&__button{
+			width: 284px;
+			height: 61px;
+		}
+
+		&__block-image{
+			@include blockContent(50%, 563px, 0px, flex, center, center);
+		}
+
+		&__image {
+			width: 591px;
+			height: 441px;
+		}
+
+		&__image>img{
+			width: 591px;
+			height: 441px;
+		}
+}

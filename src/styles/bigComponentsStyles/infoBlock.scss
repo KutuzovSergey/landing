@@ -1,0 +1,20 @@
+@import '../Main.scss';
+
+.info {
+	@include blockContent(75%, auto, auto, flex, center, space-between);
+	background: linear-gradient(93.53deg, #292929 49%, #3C3C3C 98.16%);
+	padding: 20px;
+	box-shadow: 0px 0px 100px 0px rgba(0, 0, 0, 0.45);
+
+		&__text {
+		}
+
+		&__block {
+		}
+
+		&__circle {
+		}
+
+		&__title {
+		}
+}

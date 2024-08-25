@@ -1,0 +1,8 @@
+@import '../Main.scss';
+
+.siteHeader{
+	@include block(100%, 683px);
+	background-image: url('../../images/background/header.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+}

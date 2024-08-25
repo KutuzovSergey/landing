@@ -1,0 +1,40 @@
+@import '../../../styles/Main.scss';
+
+.buttonSpan{
+    width: 230px;
+    height: 61px;
+    position: relative;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 30px;
+    border-color: $corporate_color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 2;
+    box-sizing: border-box;
+
+    &>span{
+        background: linear-gradient(91.26deg, $corporate_color 0.62%, $second_corporate_color 99.49%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        @include text($corporate_color, 1rem, 700, 21.79px, center);
+    }
+}
+
+// .buttonSpan::before{
+//     border-radius: 30px;
+//     content: '';
+    // padding: 10px;
+    // width: 233px;
+    // height: 64px;
+    // top: 0px;
+    // left: 0px;
+    // position:absolute;
+    // z-index: 1;
+    // background-image: linear-gradient(to right, $corporate_color 0%, $second_corporate_color 100%);
+    // background-image: linear-gradient(to right, $corporate_color 0.62%, $second_corporate_color 99.49%) 1;
+// }
+
+// (91.26deg, #00A550 0.62%, #00FF7C 99.49%)

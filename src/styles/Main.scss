@@ -1,33 +1,42 @@
-// @import '../fonts/Montserrat/static/Montserrat-Medium.ttf';
-// @import '../fonts/Montserrat/static/Montserrat-Bold.ttf';
+// @import '../fonts/static/OpenSans-Bold.ttf';
+// @import '../fonts/static/OpenSans-ExtraBold.ttf';
+// @import '../fonts/static/OpenSans-Light.ttf';
+// @import '../fonts/static/OpenSans-Medium.ttf';
 
 $background_first: rgba(41, 41, 41, 1);
 $background_second: rgba(60, 60, 60, 1);
 $background_third: rgba(30, 30, 30, 1);
+// $background_fourth: #1e1e1e;
 $corporate_color: rgba(0, 165, 80, 1);
 $second_corporate_color: rgba(0, 255, 124, 1);
 $color_first: rgba(255, 255, 255, 1);
 $color_second: rgba(189, 189, 189, 1);
 // $font_style: "Montserrat", system-ui;
 
-@mixin block {
-    width: 90%;
-    height: 100%;
-    margin: auto;
-    padding-top: 40px;
-    padding-bottom: 30px;
-    background-color: $background_block;
+@mixin block($width, $height) {
+    width: $width;
+    height: $height;
 }
 
-@mixin text {
+@mixin blockContent($width, $height, $margin, $display, $alignItems, $justifyContent) {
+    width: $width;
+    height: $height;
+    margin: $margin;
+    display: $display;
+    align-items: $alignItems;
+    justify-content: $justifyContent;
+}
+
+@mixin text ($color, $fontSize, $fontWeight, $lineHeight, $textAlign){
     color: $color;
-    font-size: 1.7rem;
-    font-weight: 800;
-    letter-spacing: 0.2em;
-    // font-family: "Montserrat", system-ui;
-    font-optical-sizing: auto;
-    font-weight: weight;
-    font-style: normal;
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+    line-height: $lineHeight;
+    text-align: $textAlign;
+    font-family: "Open Sans", sans-serif;
+    src: local('Lato'), url(../fonts/static/OpenSans-Bold.ttf) format('truetype');
+    src: local('Lato'), url(../fonts/static/OpenSans-Light.ttf) format('truetype');
+    src: local('Lato'), url(../fonts/static/OpenSans-Medium.ttf) format('truetype');
 }
 
 @mixin input($width, $height, $color, $fontSize, $padding, $border, $borderRadius){

@@ -1,0 +1,6 @@
+@import '../Main.scss';
+
+.howWeWork{
+	@include blockContent(75%, 435px, 0px, flex, center, space-between);
+	flex-direction: column;
+}
