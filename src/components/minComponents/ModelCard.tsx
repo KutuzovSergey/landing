@@ -1,10 +1,23 @@
 import { FC } from 'react';
 
-import '../../styles/minComponentsStyles/ModelCard.scss';
+import '../../styles/minComponentsStyles/modelCard.scss';
 
-const ModelCard: FC= () => {
+type Props = {
+    title: string,
+    image: any,
+    id: string
+}
+
+const ModelCard: FC = (props: Props) => {
+    console.log(props);
     return (
-        <div className="model">
+        <div className="model" key={props.id} id={props.id}>
+            <div className="model__title">
+                <a href="#">{props.title}</a>
+            </div>
+            <div className="model__image">
+                <img src={props.image} alt="" />
+            </div>
         </div>
     )
 }

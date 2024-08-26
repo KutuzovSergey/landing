@@ -52,7 +52,7 @@
 		}
 
 		&__text>span {
-			@include text($color_second, 0.875rem, 700, 19.07px, centr);
+			@include text($color_second, 0.875rem, 700, 19.07px, center);
 			display: block;
 			width: 60%;
 			text-align: center;

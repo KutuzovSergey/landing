@@ -1,15 +1,35 @@
 @import '../Main.scss';
 
 .info {
-	@include blockContent(75%, auto, auto, flex, center, space-between);
+	width: 100%;
+	height: auto;
 	background: linear-gradient(93.53deg, #292929 49%, #3C3C3C 98.16%);
-	padding: 20px;
+	padding: 73px 0 79px 0;
 	box-shadow: 0px 0px 100px 0px rgba(0, 0, 0, 0.45);
+	
+
+		&__wrapper{
+			@include blockContent($size_main_blocks, auto, auto, flex, center, space-between);
+			@media (max-width: 1380px) {
+				&{
+					width: 95%;
+				}
+			}
+		}
 
 		&__text {
+			width: 75%;
+			border-left: 3px solid $color_second;
+			padding: 2px 0 2px 9px;
+		}
+
+		&__text>p {
+			@include text($color_second, 0.875rem, 400, 23.8px, left);
 		}
 
 		&__block {
+			@include blockContent(20%, auto, 0, flex, center, center);
+			flex-direction: column;
 		}
 
 		&__circle {

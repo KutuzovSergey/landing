@@ -1,0 +1,30 @@
+@import '../../../styles/Main.scss';
+
+.title{
+    @include block(100%, auto);
+    display: flex;
+    justify-items: center;
+    text-align: center;
+
+    &__text{
+        @include text($color_first, 1.5rem, 400, 
+32.68px, center);
+        margin: auto;
+        display: block;
+    }
+    @media (max-width: 1200px) {
+        &__text{
+            font-size: 1rem;
+        }
+    }
+
+    @media (max-width: 700px) {
+        &__text{
+            font-size: 0.875rem;
+            line-height: 19.07px;
+        }
+    }
+}
+
+
+

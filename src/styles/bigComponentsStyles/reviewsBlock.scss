@@ -1,11 +1,17 @@
 @import '../Main.scss';
 
 .reviews{
-	@include blockContent(75%, 360px, auto, flex, center, space-between);
+	@include blockContent($size_main_blocks, 360px, auto, flex, center, space-between);
 	background: linear-gradient(93.53deg, #292929 49%, #3C3C3C 98.16%);
 	padding: 20px;
 	box-shadow: 0px 0px 100px 0px rgba(0, 0, 0, 0.45);
 	background-image: url('../../images/background/reviews.png');
 	background-repeat: no-repeat;
 	background-size: cover;
+
+	@media (max-width: 1380px) {
+		&{
+			width: 95%;
+		}
+	}
 }

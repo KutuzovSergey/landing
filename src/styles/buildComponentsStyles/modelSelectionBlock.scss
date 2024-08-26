@@ -1,1 +1,32 @@
 @import '../Main.scss';
+
+.selection {
+	@include blockContent($size_main_blocks, 959px, auto, flex, center, space-between);
+	flex-direction: column;
+
+		@media (max-width: 1380px) {
+			&{
+				width: 95%;
+			}
+		}
+
+		&__title {
+			@include blockContent(100%, auto, auto, flex, center, center);
+		}
+
+		&__title-small {
+			@include blockContent(100%, auto, auto, flex, center, center);
+		}
+
+		&__models {
+			@include blockContent(100%, 630px, auto, flex, center, space-between);
+			flex-wrap: wrap;
+			align-content: space-between;
+		}
+
+		&__button {
+			width: 284px;
+			height: 61px;
+		}
+}
+

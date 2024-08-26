@@ -1,7 +1,12 @@
 @import '../Main.scss';
 
 .banner {
-	@include blockContent(75%, 563px, auto, flex, center, space-between);
+	@include blockContent($size_main_blocks, 563px, auto, flex, center, space-between);
+		@media (max-width: 1380px) {
+			&{
+				width: 95%;
+			}
+		}
 
 		&__block-info {
 			@include blockContent(50%, auto, 0px, flex, center, space-between);

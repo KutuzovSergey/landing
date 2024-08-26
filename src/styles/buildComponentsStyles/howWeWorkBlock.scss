@@ -1,6 +1,12 @@
 @import '../Main.scss';
 
 .howWeWork{
-	@include blockContent(75%, 435px, 0px, flex, center, space-between);
+	@include blockContent($size_main_blocks, 435px, 0px, flex, center, space-between);
 	flex-direction: column;
+
+		@media (max-width: 1380px) {
+			&{
+				width: 95%;
+			}
+		}
 }

@@ -1,7 +1,7 @@
 @import '../Main.scss';
 
 .setting {
-	@include blockContent(24%, 45px, auto, flex, center, space-between);
+	@include blockContent(300px, 45px, auto, flex, center, space-between);
 
 		&__image {
 			width: 45px;

@@ -1,9 +1,15 @@
 @import '../Main.scss';
 
 .header{
-	@include blockContent(75%, 120px, auto, flex, center, space-between);
+	@include blockContent($size_main_blocks, 120px, auto, flex, center, space-between);
 
-	&__phone>span{
-		@include text($color_first, 1.75rem, 700, 38.13px, center);
-	}
+		@media (max-width: 1380px) {
+			&{
+				width: 95%;
+			}
+		}
+
+		&__phone>span{
+			@include text($color_first, 1.75rem, 700, 38.13px, center);
+		}
 }
