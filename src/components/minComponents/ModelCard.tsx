@@ -9,7 +9,7 @@ type Props = {
 }
 
 const ModelCard: FC = (props: Props) => {
-    console.log(props);
+    
     return (
         <div className="model" key={props.id} id={props.id}>
             <div className="model__title">

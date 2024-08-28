@@ -4,6 +4,8 @@ import ModelSearch from '../buildComponents/ModelSearch.tsx';
 import ModelSelectionBlock from '../buildComponents/ModelSelectionBlock.tsx';
 import OfOurServicesBlock from '../buildComponents/OfOurServicesBlock.tsx';
 import AdditionalInfoBlock from '../buildComponents/AdditionalInfoBlock.tsx';
+import imageFirst from '../../images/content/imageFirst.png';
+import imageTwo from '../../images/content/imageTwo.png';
 
 import '../../styles/bigComponentsStyles/aboutWorkBlock.scss';
 
@@ -11,10 +13,18 @@ const AboutWorkBlock: FC= () => {
     return (
         <div className="aboutWork">
             <HowWeWorkBlock />
-            <ModelSearch />
-            <ModelSelectionBlock />
+            <div className="aboutWork__wrapper-model">
+                <ModelSearch />
+                <ModelSelectionBlock />
+            </div>
             <OfOurServicesBlock />
             <AdditionalInfoBlock />
+            <div className='aboutWork__image-first'>
+                <img src={imageFirst} alt="" />
+            </div>
+            <div className='aboutWork__image-two'>
+                <img src={imageTwo} alt="" />
+            </div>
         </div>
     )
 }

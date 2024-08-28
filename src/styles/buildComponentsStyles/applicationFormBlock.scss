@@ -1,0 +1,32 @@
+@import '../Main.scss';
+
+.form-wrapper {
+	@include blockContent(
+		$size_main_blocks,
+		100%,
+		auto,
+		flex,
+		center,
+		space-between
+	);
+	padding-top: 114px;
+	padding-bottom: 100px;
+	flex-direction: column;
+	@media (max-width: 1380px) {
+		width: 95%;
+	}
+
+		&__title{
+			width: 900px;
+		}
+
+		&__title-small{
+			width: 600px;
+		}
+
+		&__form{
+			width: 100%;
+		}
+	}
+
+

@@ -1,44 +1,37 @@
 @import '../../../styles/Main.scss';
 
 .myInput{
-     @include input(100%, 40px, $inputText, 0.9em, 5px 15px, $background_block, 3px);
-     
+     @include block(100%, 61px);
+     @include text($color_second, 1rem, 400, 21.79px, left);
+     background-color: $background_third;
+     border-radius: 30px;
+     border: none;
+     padding: 0 16px 0 16px;
+
+     &:focus { 
+        border-color: none; 
+        outline: none; 
+    }
 
     &::placeholder{
-        font-size: 0.9em;
-        color: #9b9b9e;
-        text-transform: uppercase;
-        font-family: $font_style;
+        @include text($color_second, 1rem, 400, 21.79px, left);
     }
 
     &::-webkit-input-placeholder {
-        font-size: 0.9em;
-        color: #9b9b9e;
-        text-transform: uppercase;
-        font-family: $font_style;
+        @include text($color_second, 1rem, 400, 21.79px, left);
     }
 
     &::-moz-placeholder {
-        font-size: 0.9em;
-        color: #9b9b9e;
-        text-transform: uppercase;
-        font-family: $font_style;
+        @include text($color_second, 1rem, 400, 21.79px, left);
     }/* Firefox 19+ */
     
     &:-moz-placeholder {
-        font-size: 0.9em;
-        color: #9b9b9e;
-        text-transform: uppercase;
-        font-family: $font_style;
+        @include text($color_second, 1rem, 400, 21.79px, left);
     }/* Firefox 18- */
 
     &:-ms-input-placeholder {
-        font-size: 0.9em;
-        color: #9b9b9e;
-        text-transform: uppercase;
-        font-family: $font_style;
+        @include text($color_second, 1rem, 400, 21.79px, left);
     }
-
 }
 
 

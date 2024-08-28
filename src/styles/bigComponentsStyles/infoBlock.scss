@@ -1,40 +1,121 @@
-@import '../Main.scss';
+@import "../Main.scss";
 
 .info {
-	width: 100%;
-	height: auto;
-	background: linear-gradient(93.53deg, #292929 49%, #3C3C3C 98.16%);
-	padding: 73px 0 79px 0;
-	box-shadow: 0px 0px 100px 0px rgba(0, 0, 0, 0.45);
-	
+  width: 100%;
+  height: auto;
+  background: linear-gradient(93.53deg, #292929 49%, #3c3c3c 98.16%);
+  padding: 73px 0 79px 0;
+  box-shadow: 0px 0px 100px 0px rgba(0, 0, 0, 0.45);
 
-		&__wrapper{
-			@include blockContent($size_main_blocks, auto, auto, flex, center, space-between);
-			@media (max-width: 1380px) {
-				&{
-					width: 95%;
-				}
-			}
-		}
+  &__wrapper {
+    @include blockContent(
+      $size_main_blocks,
+      auto,
+      auto,
+      flex,
+      center,
+      space-between
+    );
+    @media (max-width: 1380px) {
+      & {
+        width: 95%;
+      }
+    }
+    @media (max-width: 700px) {
+      flex-direction: column;
+    }
+  }
 
-		&__text {
-			width: 75%;
-			border-left: 3px solid $color_second;
-			padding: 2px 0 2px 9px;
-		}
+  &__title{
+	display: none;
+	@media (max-width: 700px) {
+      @include blockContent(100%, auto, 0, flex, center, center);
+   }
+  }
 
-		&__text>p {
-			@include text($color_second, 0.875rem, 400, 23.8px, left);
-		}
+  &__text {
+    width: 75%;
+	 margin-top: 20px;
+    border-left: 3px solid $color_second;
+    padding: 2px 0 2px 9px;
+    @media (max-width: 700px) {
+      order: 2;
+    }
+  }
 
-		&__block {
-			@include blockContent(20%, auto, 0, flex, center, center);
-			flex-direction: column;
-		}
+  &__text > p {
+    @include text($color_second, 0.875rem, 400, 23.8px, left);
+    @media (max-width: 700px) {
+      font-size: 0.75rem;
+      line-height: 20.4px;
+    }
+  }
 
-		&__circle {
-		}
+  &__mobile-text{
+	display: none;
+	@media (max-width: 700px) {
+      margin-top: 20px;
+		display: inline-block;
+    }
+  }
 
-		&__title {
-		}
+  &__block {
+    @include blockContent(210px, 280px, 0, flex, center, space-between);
+    flex-direction: column;
+    @media (max-width: 700px) {
+      order: 1;
+      width: 131px;
+      height: 172px;
+    }
+  }
+
+  &__circle-big {
+    @include blockContent(210px, 201px, 0, flex, center, center);
+    background: linear-gradient(91.26deg, #00a550 0.62%, #00ff7c 99.49%);
+    box-shadow: 0px 0px 40px 0px rgba(0, 255, 124, 0.4);
+    border-radius: 50%;
+    @media (max-width: 700px) {
+      width: 130px;
+      height: 130px;
+    }
+  }
+
+  &__circle {
+    @include blockContent(170px, 170px, 0, flex, center, center);
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.4);
+    background: rgba(42, 42, 42, 1);
+    border-radius: 50%;
+    @media (max-width: 700px) {
+      width: 106px;
+      height: 106px;
+    }
+  }
+
+  &__circle > span {
+    background: linear-gradient(
+      91.26deg,
+      $corporate_color 0.62%,
+      $second_corporate_color 99.49%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    @include text($corporate_color, 2.875rem, 700, 46px, center);
+    @media (max-width: 700px) {
+      font-size: 1.25rem;
+    }
+  }
+
+  &__inscription {
+    @include blockContent(auto, auto, 0, flex, center, center);
+    flex-direction: column;
+  }
+
+  &__inscription > span {
+    @include text($color_first, 1.125rem, 700, 24.51px, center);
+    text-transform: uppercase;
+    @media (max-width: 700px) {
+      font-size: 0.75rem;
+      line-height: 16.34px;
+    }
+  }
 }

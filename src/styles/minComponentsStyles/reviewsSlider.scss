@@ -1,0 +1,60 @@
+@import '../Main.scss';
+
+.reviews-slider {
+	width: 370px;
+	height: 221px;
+	padding: 20px 30px 15px 30px;
+	border-radius: 15px;
+	background-color: $background_third;
+	margin-left: 30px;
+	@media (max-width: 700px) {
+	}
+
+		&__block{
+			@include blockContent(100%, auto, 0, flex, center, flex-start);
+			margin-bottom: 24px;
+		}
+
+		&__image {
+			@include blockContent(55px, 55px, 0, flex, center, center);
+			background-color: $background_first;
+			border-radius: 30px;
+			@media (max-width: 700px) {
+				width: 40px;
+				height: 40px;
+			}
+		}
+
+		&__image>img{
+			width: 30px;
+			height: 30px;
+			margin: auto;
+			@media (max-width: 700px) {
+				width: 21.82px;
+				height: 21.82px;
+			}
+		}
+
+		&__user-name {
+			width: auto;
+			height: auto;
+			margin-left: 20px;
+		}
+
+		&__user-name>span{
+			@include text($color_first, 1rem, 700, 21.79px, left);
+			@media (max-width: 700px) {
+				font-size: 0.75rem;
+				line-height: 16.34px;
+			}
+		}
+
+		&__text {
+			width: auto;
+			height: auto;
+		}
+
+		&__text>span{
+			@include text($color_second, 1rem, 400, 21.79px, left);
+		}
+}

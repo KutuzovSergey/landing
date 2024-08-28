@@ -1,0 +1,13 @@
+@import '../Main.scss';
+
+.application-form {
+	@include blockContent(100%, auto, auto, flex, center, space-between);
+		&__bloсk {
+			width: 312px;
+			height: 61px;
+		}
+		@media (max-width: 700px) {
+			flex-direction: column;
+			height: 250px;
+		}
+}

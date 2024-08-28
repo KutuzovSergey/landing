@@ -1,3 +1,5 @@
+import { ChangeEvent } from "react";
+
 export type JobCardsArrType = {
 	number: string,
    image: any,
@@ -13,6 +15,17 @@ export type ChangeListActionType = {
    textPost: string
 }
 
+export type listModelsSelectType = {
+   value: string,
+   name: string
+}[]
+
+//  types state
+export type UserReviewsType = {
+   userName: string,
+   userOpinion: string
+} []
+
 export type listModelsType = {
    value: string,
    name: string,
@@ -26,22 +39,36 @@ export type ServicesType = {
    price: string
 }[]
 
-export type listModelsSelectType = {
-   value: string,
-   name: string
-}[]
-
-export type SearchType = [
-   listModels: listModelsType,
-]
-
 export type StateType = {
    listModels: listModelsType,
-   services: ServicesType
+   services: ServicesType,
+   userReviews: UserReviewsType,
 }
-
+//  types state
 
 export type listModelsActionType = {
    type: string,
    payload: listModelsType
 }
+
+export type inputValueType = [
+   inputName: string,
+   inputPhone: string,
+]
+
+export type UseSendApplicationType = [
+   inputValue: string,
+   changeInputName: (e: ChangeEvent) => void,
+   changeInputPhone: (e: ChangeEvent) => void
+]
+
+// hooks
+
+export type SearchType = [
+   listModels: listModelsType,
+]
+
+export type SliderType = [
+   onClickLeft: () => void,
+   onClickRight: () => void,
+]

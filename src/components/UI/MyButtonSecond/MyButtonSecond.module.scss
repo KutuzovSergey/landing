@@ -1,0 +1,19 @@
+@import '../../../styles/Main.scss';
+
+.button{
+    width: 230px;
+    height: 61px;
+    position: relative;
+    border: 2px solid $color_first;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 2;
+    box-sizing: border-box;
+
+    &>span{
+        @include text($color_first, 1rem, 700, 21.79px, center);
+    }
+}

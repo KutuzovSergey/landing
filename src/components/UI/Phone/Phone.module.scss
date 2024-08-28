@@ -1,0 +1,7 @@
+@import '../../../styles/Main.scss';
+
+.phone{
+    &>span{
+        @include text($color_first, 1.75rem, 700, 38.13px, center);
+    }
+}

@@ -1,0 +1,33 @@
+@import '../Main.scss';
+
+.reviews-sliders {
+	@include blockContent(1210px, 221px, 0px, flex, center, space-between);
+
+		&__switches {
+			@include blockContent(49px, 34px, 0px, flex, center, center);
+			background-color: $background_third;
+			border-radius: 30px;
+			cursor: pointer;
+		}
+
+		&__switches>img{
+			width: 15px;
+			height: auto;
+		}
+
+		&__wrapper {
+			@include blockContent(1110px, 221px, 0px, flex, center, space-between);
+			overflow: hidden;
+			position: relative;
+		}
+
+		&__block{
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 2420px;
+			height: auto;
+			display: flex;
+			justify-content: space-between;
+		}
+}
