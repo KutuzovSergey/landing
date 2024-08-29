@@ -9,7 +9,46 @@
 			}
 		}
 
+		&__sandwich{
+			display: none;
+			@media (max-width: 700px) {
+				width: 30px;
+				height: 30px;
+				display: block;
+			}
+		}
+
 		&__menu{
 			width: 35%;
+			@media (max-width: 700px) {
+				display: none;
+			}
+		}
+
+		&__phone{
+			@media (max-width: 700px) {
+				display: none;
+			}
+		}
+
+		&__call-back{
+			@media (max-width: 700px) {
+				display: none;
+			}
+		}
+
+		&__call-back-image{
+			display: none;
+			@media (max-width: 700px) {
+				width: 30px;
+				height: 30px;
+				cursor: pointer;
+				display: block;
+			}
+		}
+
+		&__call-back-image>img{
+			width: 100%;
+			height: auto;
 		}
 }

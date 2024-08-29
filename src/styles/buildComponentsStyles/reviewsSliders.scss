@@ -1,7 +1,13 @@
 @import '../Main.scss';
 
 .reviews-sliders {
-	@include blockContent(1210px, 221px, 0px, flex, center, space-between);
+	@include blockContent(1328px, 221px, 0px, flex, center, space-between);
+		@media (max-width: 1500px) {
+			width: 960px;
+		}
+		@media (max-width: 1200px) {
+			width: 840px;
+		}
 
 		&__switches {
 			@include blockContent(49px, 34px, 0px, flex, center, center);
@@ -16,16 +22,22 @@
 		}
 
 		&__wrapper {
-			@include blockContent(1110px, 221px, 0px, flex, center, space-between);
+			@include blockContent(1180px, 221px, 0px, flex, center, space-between);
 			overflow: hidden;
 			position: relative;
+			@media (max-width: 1500px) {
+				width: 780px;
+			}
+			@media (max-width: 1200px) {
+				width: 640px;
+			}
 		}
 
 		&__block{
 			position: absolute;
 			left: 0;
 			top: 0;
-			width: 2420px;
+			width: 2390px;
 			height: auto;
 			display: flex;
 			justify-content: space-between;

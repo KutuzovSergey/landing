@@ -16,7 +16,7 @@ const MySelect: FC<Props> = (props: Props) => {
             <option value="" className={cl.mySelect__main}>Модель</option>
             {
                 props.values.map(val =>
-                    <option value={val.value}>{val.name}</option>
+                    <option value={val.value} key={val.id}>{val.name}</option>
                 )
             }
         </select>

@@ -3,6 +3,12 @@
 .logo{
 	width: 14vw;
 	height: auto;
+	@media (max-width: 1200px) {
+		width: 150px;
+	}
+	@media (max-width: 700px) {
+		width: 122px;
+	}
 }
 
 .logo>img{

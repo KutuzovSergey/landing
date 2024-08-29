@@ -3,5 +3,8 @@
 .phone{
     &>span{
         @include text($color_first, 1.75rem, 700, 38.13px, center);
+        @media (max-width: 1200px) {
+			font-size: 1.35rem;
+		}
     }
 }

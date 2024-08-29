@@ -4,8 +4,9 @@ import userPhoto from '../../images/content/userPhoto.svg';
 import '../../styles/minComponentsStyles/reviewsSlider.scss';
 
 type Props = {
+    id: number,
     userName: string,
-    userOpinion: string
+    userOpinion: string,
 }
 
 const ReviewsSlider: FC= (props: Props) => {

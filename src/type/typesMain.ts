@@ -16,12 +16,18 @@ export type ChangeListActionType = {
 }
 
 export type listModelsSelectType = {
+   id: number,
    value: string,
    name: string
 }[]
 
+export type useSearchType = {
+   listModels: listModelsSelectType
+}[]
+
 //  types state
 export type UserReviewsType = {
+   id: number,
    userName: string,
    userOpinion: string
 } []
@@ -68,7 +74,7 @@ export type SearchType = [
    listModels: listModelsType,
 ]
 
-export type SliderType = [
+export type useSliderType = [
    onClickLeft: () => void,
    onClickRight: () => void,
 ]
