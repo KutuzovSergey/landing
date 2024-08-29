@@ -1,7 +1,7 @@
 @import '../Main.scss';
 
 .banner {
-	@include blockContent($size_main_blocks, 563px, auto, flex, center, space-between);
+	@include blockContent($size_main_blocks, auto, auto, flex, center, space-between);
 		@media (max-width: 1380px) {
 			&{
 				width: 95%;
@@ -16,6 +16,16 @@
 			flex-direction: column;
 			@media (max-width: 1200px) {
 				order: 2;
+			}
+		}
+
+		&__title{
+			margin-bottom: 40px;
+			@media (max-width: 1200px) {
+				margin-bottom: 30px;
+			}
+			@media (max-width: 700px) {
+				margin-bottom: 20px;
 			}
 		}
 
@@ -42,9 +52,14 @@
 		}
 
 		&__text{
+			margin-bottom: 45px;
 			@media (max-width: 1200px) {
 				width: 100%;
 				text-align: center;
+				margin-bottom: 40px;
+			}
+			@media (max-width: 700px) {
+				margin-bottom: 35px;
 			}
 		}
 
@@ -66,15 +81,22 @@
 		&__button{
 			width: 284px;
 			height: 61px;
+			margin-bottom: 100px;
 			@media (max-width: 1200px) {
 				width: 280px;
 				height: 54px;
+				margin-bottom: 60px;
+			}
+			@media (max-width: 700px) {
+				margin-bottom: 40px;
 			}
 		}
 
 		&__block-image{
 			@include blockContent(50%, 563px, 0px, flex, center, center);
 			@media (max-width: 1200px) {
+				width: 100%;
+				height: auto;
 				order: 1;
 			}
 		}
@@ -85,6 +107,7 @@
 			@media (max-width: 1200px) {
 				width: 290px;
 				height: 230px;
+				margin-bottom: 18px;
 			}
 			@media (max-width: 700px) {
 				width: 242px;

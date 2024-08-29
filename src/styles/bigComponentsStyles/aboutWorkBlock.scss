@@ -6,6 +6,9 @@
 	flex-direction: column;
 	background: linear-gradient(93.53deg, #292929 49%, #3C3C3C 98.16%);
 	position: relative;
+	background-image: url('../../images/background/fonAboutWork.png');
+	background-repeat: no-repeat;
+	background-size: cover;
 
 	&__wrapper-model{
 		@include blockContent(100%, 1115px, 205px 0 0 0, flex, center, space-between);

@@ -8,7 +8,9 @@ const HowWeWorkBlock: FC= () => {
     return (
         <div className="howWeWork">
             <MyTitle>Как мы работаем?</MyTitle>
-            <JobCards/>
+            <div className="howWeWork__job-cards">
+                <JobCards />
+            </div>
         </div>
     )
 }

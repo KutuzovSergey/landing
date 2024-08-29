@@ -7,7 +7,9 @@ import '../../styles/bigComponentsStyles/siteHeaderBlock.scss';
 const SiteHeaderBlock: FC= () => {
     return (
         <div className="siteHeader">
-            <Header />
+            <div className="siteHeader__block-header">
+                <Header />
+            </div>
             <Banner />
         </div>
     )
