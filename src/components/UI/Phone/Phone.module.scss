@@ -5,6 +5,15 @@
         @include text($color_first, 1.75rem, 700, 38.13px, center);
         @media (max-width: 1200px) {
 			font-size: 1.35rem;
+            line-height: 24px;
+		}
+        @media (max-width: 950px) {
+			font-size: 1rem;
+            line-height: 20px;
+		}
+        @media (max-width: 700px) {
+			font-size: 0.875rem;
+            line-height: 19.07px;
 		}
     }
 }

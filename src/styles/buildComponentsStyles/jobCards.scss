@@ -3,9 +3,18 @@
 .cards{
 	width: 100%;
 	height: auto;
-	@media (max-width: 1550px) {
+	@media (max-width: 1300px) {
+		width: 903px;
+		height: 450px;
+		padding: 20px 20px 0 20px;
+		overflow: hidden;
+	}
+	@media (max-width: 1000px) {
+		width: 602px;
+		overflow: hidden;
+	}
+	@media (max-width: 700px) {
 		width: 382px;
-		height: 400px;
 		overflow: hidden;
 	}
 
@@ -14,25 +23,9 @@
 		@media (max-width: 1550px) {
 			width: 1182px;
 		}
-	}
-
-	&__switch{
-		display: none;
-		@media (max-width: 1550px) {
-			@include blockContent(170px, 26px, auto, flex, center, space-between);
-			background-color: #1e1e1e;
-			border-radius: 10%;
+		@media (max-width: 1300px) {
+			height: 340px;
 		}
-	}
-
-	&__arrow{
-		width: 15px;
-		height: auto;
-	}
-
-	&__arrow>img{
-		width: 100%;
-		height: auto;
 	}
 }
 

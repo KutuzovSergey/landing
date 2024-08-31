@@ -6,6 +6,7 @@ import ReviewsSlider from "../minComponents/ReviewsSlider.tsx";
 import { useSlider } from "../../hooks/useSlider.ts";
 
 import "../../styles/buildComponentsStyles/reviewsSliders.scss";
+import SwitchSlider from "../UI/SwitchSlider/SwitchSlider.tsx";
 
 const ReviewsSliders: FC = () => {
   const reviews = useSelector((state) => state.userReviews);
@@ -36,6 +37,10 @@ const ReviewsSliders: FC = () => {
       <div className="reviews-sliders__switches" onClick={() => onClickRight()}>
         <img src={arrowRight} alt="" />
       </div>
+      <div className="reviews-sliders__switches-adaptive">
+        <SwitchSlider/>
+      </div>
+      
     </div>
   );
 };

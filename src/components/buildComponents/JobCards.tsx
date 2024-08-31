@@ -4,9 +4,8 @@ import card01 from '../../images/content/cards/card01.png';
 import card02 from '../../images/content/cards/card02.png';
 import card03 from '../../images/content/cards/card03.png';
 import card04 from '../../images/content/cards/card04.png';
-import jobArrowLeft from '../../images/icons/jobArrowLeft.svg';
-import jobArrowRight from '../../images/icons/jobArrowRight.svg';
 import { JobCardsArrType } from '../../type/typesMain';
+import SwitchSlider from '../UI/SwitchSlider/SwitchSlider.tsx';
 
 import '../../styles/buildComponentsStyles/jobCards.scss';
 
@@ -36,28 +35,20 @@ const JobCards: FC = () => {
     return (
         <div className="cards">
             <div className="cards__wrapper">
-            {
-                jobCardsArr.map(card => 
-                    <JobCard
-                        key={card.number}
-                        numberCard={card.number}
-                        imageCard={card.image }
-                        textCard={card.text}
-                />)
-            }
+                {
+                    jobCardsArr.map(card => 
+                        <JobCard
+                            key={card.number}
+                            numberCard={card.number}
+                            imageCard={card.image }
+                            textCard={card.text}
+                    />)
+                }
             </div>
-
-            <div className='cards__switch'>
-                <div className='cards__arrow'>
-                    <img src={jobArrowLeft} alt="" />
-                </div>
-                <div className='cards__text'>
-                    <span></span>
-                </div>
-                <div className='cards__arrow'>
-                    <img src={jobArrowRight} alt="" />
-                </div>
+            <div className="cards__switch">
+                <SwitchSlider/>
             </div>
+            
         </div>
     )
 }

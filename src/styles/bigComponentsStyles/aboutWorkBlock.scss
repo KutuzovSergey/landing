@@ -13,6 +13,23 @@
 	&__wrapper-model{
 		@include blockContent(100%, 1115px, 205px 0 0 0, flex, center, space-between);
 		flex-direction: column;
+		@media (max-width: 700px) {
+			height: auto;
+			margin: 0;
+		}
+	}
+
+	&__wrapper-search{
+		width: $size_main_blocks;
+		@media (max-width: 1380px) {
+			width: 95%;
+		}
+		@media (max-width: 1200px) {
+			width: $size_main_blocks1200;
+		}
+		@media (max-width: 700px) {
+			display: none;
+		}
 	}
 
 	&__image-first{

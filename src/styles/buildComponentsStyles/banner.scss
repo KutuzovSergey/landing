@@ -9,6 +9,10 @@
 		}
 		@media (max-width: 1200px) {
 			flex-direction: column;
+			width: $size_main_blocks1200;
+		}
+		@media (max-width: 400px) {
+			width: 96%;
 		}
 
 		&__block-info {

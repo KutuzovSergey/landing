@@ -14,7 +14,9 @@ const AboutWorkBlock: FC= () => {
         <div className="aboutWork">
             <HowWeWorkBlock />
             <div className="aboutWork__wrapper-model">
-                <ModelSearch />
+                <div className="aboutWork__wrapper-search">
+                    <ModelSearch />
+                </div>
                 <ModelSelectionBlock />
             </div>
             <OfOurServicesBlock />

@@ -30,6 +30,12 @@ const OfOurServicesBlock: FC = () => {
                             price={service.price} />
                     )
                 }
+                <div className="services__auxiliary-first services__auxiliary-block"></div>
+                <div className="services__auxiliary-second services__auxiliary-block"></div>
+                <div className="services__auxiliary-third services__auxiliary-block"></div>
+                <div className="services__auxiliary-fourth services__auxiliary-block"></div>
+                <div className="services__auxiliary-fifth services__auxiliary-block"></div>
+                <div className="services__auxiliary-fifth services__auxiliary-block"></div>
             </div>
         </div>
     )

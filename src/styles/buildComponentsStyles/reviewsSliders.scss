@@ -1,12 +1,16 @@
 @import '../Main.scss';
 
 .reviews-sliders {
-	@include blockContent(1328px, 221px, 0px, flex, center, space-between);
+	@include blockContent(1328px, auto, 0px, flex, center, space-between);
 		@media (max-width: 1500px) {
 			width: 960px;
 		}
 		@media (max-width: 1200px) {
 			width: 840px;
+		}
+		@media (max-width: 700px) {
+			flex-direction: column;
+			width: 100%;
 		}
 
 		&__switches {
@@ -14,6 +18,9 @@
 			background-color: $background_third;
 			border-radius: 30px;
 			cursor: pointer;
+			@media (max-width: 1200px) {
+				display: none;
+			}
 		}
 
 		&__switches>img{
@@ -31,6 +38,13 @@
 			@media (max-width: 1200px) {
 				width: 640px;
 			}
+			@media (max-width: 700px) {
+				width: 540px;
+				height: 186px;
+			}
+			@media (max-width: 440px) {
+				width: 340px;
+			}
 		}
 
 		&__block{
@@ -41,5 +55,17 @@
 			height: auto;
 			display: flex;
 			justify-content: space-between;
+			@media (max-width: 700px) {
+				width: 1640px;
+			}
+		}
+
+		&__switches-adaptive{
+			display: none;
+			@media (max-width: 700px) {
+				width: 100%;
+				height: auto;
+				display: block;
+			}
 		}
 }

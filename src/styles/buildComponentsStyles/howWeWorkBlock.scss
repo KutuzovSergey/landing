@@ -10,9 +10,19 @@
 				width: 95%;
 			}
 		}
+		@media (max-width: 1200px) {
+			&{
+				width: $size_main_blocks1200;
+			}
+		}
+		@media (max-width: 400px) {
+			width: 96%;
+		}
 
 		&__job-cards{
-			@include blockContent(100%, auto, 0px, flex, center, center);
-			margin-top: 40px;
+			@include blockContent(100%, auto, 40px 0px 0px 0px, flex, center, center);
+			@media (max-width: 1380px) {
+				margin: 0;
+			}
 		}
 }

@@ -9,6 +9,15 @@
 				width: 95%;
 			}
 		}
+		@media (max-width: 1200px) {
+			&{
+				height: auto;
+				width: $size_main_blocks1200;
+			}
+		}
+		@media (max-width: 400px) {
+			width: 96%;
+		}
 
 		&__title {
 			@include blockContent(100%, auto, auto, flex, center, center);
@@ -22,6 +31,16 @@
 			@include blockContent(100%, 630px, auto, flex, center, space-between);
 			flex-wrap: wrap;
 			align-content: space-between;
+			@media (max-width: 1200px) {
+				width: 95%;
+				overflow: hidden;
+			}
+			@media (max-width: 700px) {
+				width: 95%;
+				height: 410px;
+				margin-bottom: 20px;
+				overflow: hidden;
+			}
 		}
 
 		&__button {

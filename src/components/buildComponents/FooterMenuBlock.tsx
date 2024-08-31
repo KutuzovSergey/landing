@@ -9,21 +9,23 @@ import "../../styles/buildComponentsStyles/footerMenuBlock.scss";
 
 const FooterMenuBlock: FC = () => {
   return (
-    <div className="footerMenu">
-      <div className="footerMenu__wrapper">
-        <div className="footerMenu__logo">
+    <div className="footer-menu">
+      <div className="footer-menu__wrapper">
+        <div className="footer-menu__logo">
           <Logo />
         </div>
-        <div className="footerMenu__menu">
+        <div className="footer-menu__menu">
           <Menu />
         </div>
-        <div className="footerMenu__tel">
-          <div className="footerMenu__tel-image">
+        <div className="footer-menu__tel">
+          <div className="footer-menu__tel-image">
             <img src={telephone} alt="" />
           </div>
           <Phone />
         </div>
-        <MyButtonSecond>Перезвонить мне</MyButtonSecond>
+        <div className="footer-menu__button">
+          <MyButtonSecond>Перезвонить мне</MyButtonSecond>
+        </div>
       </div>
     </div>
   );

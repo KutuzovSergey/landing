@@ -16,6 +16,7 @@
 		&__wrapper {
 			@include blockContent($size_main_blocks, 50px, auto, flex, center, space-between);
 			@media (max-width: 1200px) {
+				width: $size_main_blocks1200;
 				height: 65px;
 				flex-direction: column;
 				padding: 10px 0 5px 0;
@@ -26,12 +27,15 @@
 				flex-direction: column;
 				padding: 5px 0 5px 0;
 			}
+			@media (max-width: 400px) {
+				width: 96%;
+			}
 		}
 
 		&__text{
 			@include text($color_second, 1rem, 400, 16.34px, center);
 			@media (max-width: 700px) {
-				font-size: 0.875px;
+				font-size: 0.875rem;
 				line-height: 13.62px;
 			}
 		}

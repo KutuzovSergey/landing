@@ -21,9 +21,15 @@
         width: 95%;
       }
     }
+    @media (max-width: 1200px) {
+			width: $size_main_blocks1200;
+		}
     @media (max-width: 700px) {
       flex-direction: column;
     }
+    @media (max-width: 400px) {
+			width: 96%;
+		}
   }
 
   &__title{
